@@ -8,7 +8,7 @@ contract CountContribution{
     address owner=msg.sender;
 
     /// @dev Constructor, count a contribution of 1 ETH to the creator.
-    function CountContribution() public {
+    function CountContribution() public payable {
         recordContribution(owner, 1 ether);
     }
 
